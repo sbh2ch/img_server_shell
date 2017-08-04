@@ -18,13 +18,20 @@ fileCheck(){
 divide() {
   FILENAME=`find /home/dev/originalImages/$YY/$MM/$DD -name COMS_GOCI_BI_$YY$MM$DD$TIME*.JPG`
   echo "divide [[ $FILENAME ]]"
+  convert $FILENAME -crop 5000x5000+300+300 /home/dev/originalImages/$YY/$MM/$DD/RGB_$TIME.JPG
 }
-
+tttt() {
 # for loop test
-forloop() {
-  for((i=0; $i <= 5; i++))
+  for i in `seq 0 5`
   do
-    echo "$i"
+    for j in `seq 0 5`
+    do
+      xPos=$j
+      yPos=$i
+      startX=`expr $j \* 800`
+      startY=`expr $i \* 800`
+      convert -crop 800x800+$startX+$startY $FILENAME /home/dev/result/$xPos-$yPos.JPG
+    done
   done
 }
 

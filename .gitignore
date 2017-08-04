@@ -2,3 +2,5 @@ originalImages
 cronTest.sh
 cronTest2.sh
 cronTest3.sh
+*.JPG
+*.jpg
