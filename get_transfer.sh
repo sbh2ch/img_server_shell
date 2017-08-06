@@ -73,7 +73,7 @@ else
       echo "ok"
       divide
     else
-      echo "rt: no such file exception"
+      echo "no such file exception : retry"
       sendAlertEmail
     fi
   fi
