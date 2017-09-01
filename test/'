@@ -1,0 +1,13 @@
+#!/bin/bash
+
+testee(){
+    echo "current date is $(date +%Y-%m-%d)"
+    echo "current time is $(date +%H:%M:%S)"
+}
+
+get_year(){
+    return $(date +%Y)
+}
+
+
+testee
