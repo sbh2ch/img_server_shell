@@ -1,6 +1,14 @@
 # img_server_shell
 > shell scripts for Image Server (GOCI Observation Application)
 
+### Main Code 
+`/home/dev/test/generateImage.sh`
+
+### Crontab
+```bash
+30 11-19/1 * * * sh /home/dev/test/generateImage.sh
+```
+
 ### RUNNING TIME (KST)
 * RGB
   * 00 : 10:20
