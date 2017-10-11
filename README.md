@@ -19,3 +19,7 @@
   * 05 : 16:15
   * 06 : 17:15
   * 07 : 18:15
+
+### RUNTIME ERROR
+* check the server no.100 
+* c:/gdds1/goci_monitor/l2
